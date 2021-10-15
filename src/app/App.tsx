@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Dashboard from '../screens/dashboard/dashboard';
 import NavBar from '../components/navBar/navBar';
+import Footer from '../components/footer/footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/us/" component={Dashboard} />
         </Switch>
       </Router>
+      <Footer />
     </main>
   );
 }
