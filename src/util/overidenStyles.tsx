@@ -4,6 +4,7 @@ import { colors } from "../constants/colors";
 
 export const CustomListSubheader = withStyles({
     root: {
-        backgroundColor: colors.black
+        backgroundColor: colors.black,
+        color: 'red'
     }
 })(ListSubheader);

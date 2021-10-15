@@ -1,8 +1,8 @@
-import { AppBar, Grid, IconButton, Toolbar, Typography } from '@mui/material';
-import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
+import React from 'react';
+import logo from "../../assets/Spotify_Logo.png";
 import useStyles from './navBarCss';
-
 const NavBar = () => {
     const classes = useStyles();
     return (
@@ -12,12 +12,10 @@ const NavBar = () => {
             <Toolbar
                 style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", height: "84px" }}>
                 <div>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                    >
-                        Spotify
-                    </Typography>
+                    <img
+                        width="160px"
+                        height="50px"
+                        src={logo} />
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center" }}>
                     <Typography
