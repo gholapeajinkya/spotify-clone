@@ -3,6 +3,7 @@ import React from 'react';
 import { colors } from '../../constants/colors';
 import { CustomListSubheader } from '../../util/overidenStyles';
 import useStyles from './footerCss';
+import logo from "../../assets/Spotify_Logo.png";
 
 const Footer = () => {
     const classes = useStyles()
@@ -10,10 +11,20 @@ const Footer = () => {
         <Grid
             className={classes.root}
             justifyContent="center"
+            spacing={2}
             container>
             <Grid
                 item
-                sm={4}
+                sm={3}
+                xs={12}>
+                <img
+                    width="160px"
+                    height="50px"
+                    src={logo} />
+            </Grid>
+            <Grid
+                item
+                sm={3}
                 xs={12}>
                 <List
                     subheader={<CustomListSubheader>
@@ -32,12 +43,13 @@ const Footer = () => {
             </Grid>
             <Grid
                 item
-                sm={4}
+                sm={3}
                 xs={12}>
                 <List
                     subheader={<ListSubheader
-                        // style={{ backgroundColor: colors.black }}
-                        classes={{ root: classes.root }}
+                        className="MuiListSubheader-root"
+                    // style={{ backgroundColor: colors.black }}
+                    // classes={{ root: classes.root }}
                     >COMMUNITIES</ListSubheader>}>
                     <ListItem>
                         <ListItemText>For Artists</ListItemText>
@@ -58,7 +70,7 @@ const Footer = () => {
             </Grid>
             <Grid
                 item
-                sm={4}
+                sm={3}
                 xs={12}>
                 <List
                     subheader={<ListSubheader>USEFUL LINKS</ListSubheader>}>
