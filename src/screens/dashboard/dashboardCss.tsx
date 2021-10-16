@@ -4,15 +4,11 @@ import { alpha } from '@mui/system';
 import { colors } from '../../constants/colors';
 
 const useStyles = makeStyles({
-    root: {
-        backgroundColor: colors.black,
-        color: colors.white
+    bigTitle: {
+        fontSize: "0.5vw",
+        color: colors.green,
+        textAlign: "center"
     },
-
-    listSubHeader: {
-        backgroundColor: colors.black,
-        color: colors.white
-    }
 });
 
 export default useStyles;
