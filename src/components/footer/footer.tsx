@@ -1,4 +1,4 @@
-import { Grid, List, ListItem, ListItemText, ListSubheader } from '@mui/material';
+import { Grid, List, ListItem, ListItemText, ListSubheader, ThemeProvider } from '@mui/material';
 import React from 'react';
 import { colors } from '../../constants/colors';
 import { CustomListSubheader } from '../../util/overidenStyles';
@@ -9,6 +9,7 @@ const Footer = () => {
     const classes = useStyles()
     return (
         <Grid
+            style={{ marginTop: "20px" }}
             className={classes.root}
             justifyContent="center"
             spacing={2}
@@ -27,9 +28,12 @@ const Footer = () => {
                 sm={3}
                 xs={12}>
                 <List
-                    subheader={<CustomListSubheader>
-                        COMPANY
-                    </CustomListSubheader>}>
+                    subheader={
+                        <ListSubheader
+                            style={{ backgroundColor: colors.black, color: colors.grey }}>
+                            COMPANY
+                        </ListSubheader>
+                    }>
                     <ListItem>
                         <ListItemText>About</ListItemText>
                     </ListItem>
@@ -46,11 +50,11 @@ const Footer = () => {
                 sm={3}
                 xs={12}>
                 <List
-                    subheader={<ListSubheader
-                        className="MuiListSubheader-root"
-                    // style={{ backgroundColor: colors.black }}
-                    // classes={{ root: classes.root }}
-                    >COMMUNITIES</ListSubheader>}>
+                    className={classes.listSubHeader}
+                    subheader={
+                        <ListSubheader
+                            style={{ backgroundColor: colors.black, color: colors.grey }}
+                        >COMMUNITIES</ListSubheader>}>
                     <ListItem>
                         <ListItemText>For Artists</ListItemText>
                     </ListItem>
@@ -73,7 +77,7 @@ const Footer = () => {
                 sm={3}
                 xs={12}>
                 <List
-                    subheader={<ListSubheader>USEFUL LINKS</ListSubheader>}>
+                    subheader={<ListSubheader style={{ backgroundColor: colors.black, color: colors.grey }} >USEFUL LINKS</ListSubheader>}>
                     <ListItem>
                         <ListItemText>Support</ListItemText>
                     </ListItem>
@@ -85,7 +89,7 @@ const Footer = () => {
                     </ListItem>
                 </List>
             </Grid>
-        </Grid>
+        </Grid >
     )
 }
 
