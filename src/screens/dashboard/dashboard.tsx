@@ -1,10 +1,8 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
-import CustomButton from '../../components/customButton/customButton';
-import useStyles from './dashboardCss';
+import "./dashboard.css";
 
 const Dashboard = () => {
-    const classes = useStyles()
     return (
         <Grid
             container
@@ -12,9 +10,7 @@ const Dashboard = () => {
             <Grid
                 item
                 xs={12}>
-                <Typography
-                    className={classes.bigTitle}
-                >
+                <Typography>
                     Listening is everything
                 </Typography>
                 <Typography variant="h6" align="center">Millions of songs and podcasts. No credit card needed.</Typography>
@@ -24,9 +20,6 @@ const Dashboard = () => {
                     <Grid
                         item
                         xs={12}>
-                        <CustomButton>
-                            GET SPOTIFY FREE
-                        </CustomButton>
                     </Grid>
                 </Grid>
             </Grid>
