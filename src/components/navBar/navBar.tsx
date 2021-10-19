@@ -18,48 +18,13 @@ const NavBar = () => {
                         src={logo} />
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center" }}>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        classes={{
-                            root: classes.navBarItemText
-                        }}
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        style={{ paddingLeft: "10px", paddingRight: "10px" }}
-                    >
-                        Support
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        style={{ paddingLeft: "30px", paddingRight: "30px" }}
-                    >
-                        Download
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        |
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        style={{ paddingLeft: "30px", paddingRight: "30px" }}
-                    >
-                        Sign up
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        style={{ paddingLeft: "30px", paddingRight: "30px" }}
-                    >
-                        Log in
-                    </Typography>
+                    <p>Premium</p>
+                    <p>Support</p>
+                    <p>Download</p>
+                    <p>|</p>
+                    <p>Sign up</p>
+                    <p>Log in</p>
+
                     <IconButton
                         size="large"
                         edge="start"
