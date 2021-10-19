@@ -1,5 +1,5 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import { AppBar, IconButton, Toolbar } from '@mui/material';
+import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import React from 'react';
 import logo from "../../assets/Spotify_Logo.png";
 import useStyles from './navBarCss';
