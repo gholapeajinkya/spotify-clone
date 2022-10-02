@@ -1,10 +1,14 @@
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/Spotify_Logo.png";
 import useStyles from './navBarCss';
 const NavBar = () => {
     const classes = useStyles();
+    const navigate = useNavigate();
+    const handleNavigateToLandingPage = () => {
+        navigate("/us/landingPage")
+    }
     return (
         <AppBar
             position="static"
@@ -57,6 +61,7 @@ const NavBar = () => {
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                         style={{ paddingLeft: "30px", paddingRight: "30px" }}
+                        onClick={handleNavigateToLandingPage}
                     >
                         Log in
                     </Typography>
