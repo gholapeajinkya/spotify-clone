@@ -12,10 +12,10 @@ code {
     monospace;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'GothamBold';
     src: url('./assets/fonts/GothamBold.ttf') format('.ttf'),
          url('./assets/fonts/GothamBold.otf') format('.otf');
     font-weight: normal;
     font-style: normal;
-}
+} */

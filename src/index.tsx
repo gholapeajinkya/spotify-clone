@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
 import App from './app/App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Dashboard from './screens/dashboard/dashboard';
+import LandingPage from './screens/landingPage/landingPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <div >Error</div>,
+    children: [
+      {
+        path: '/us',
+        element: <Dashboard />,
+      }
+    ]
+  },
+]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
   document.getElementById('root')
 );
