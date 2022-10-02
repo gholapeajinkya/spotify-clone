@@ -7,7 +7,7 @@ const NavBar = () => {
     const classes = useStyles();
     const navigate = useNavigate();
     const handleNavigateToLandingPage = () => {
-        navigate("/us/landingPage")
+        navigate("/landingPage")
     }
     return (
         <AppBar

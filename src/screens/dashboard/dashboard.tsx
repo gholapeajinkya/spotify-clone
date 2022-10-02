@@ -1,36 +1,40 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import CustomButton from '../../components/customButton/customButton';
+import Footer from '../../components/footer/footer';
 import useStyles from './dashboardCss';
 
 const Dashboard = () => {
     const classes = useStyles()
     return (
-        <Grid
-            container
-            justifyContent="center">
+        <React.Fragment>
             <Grid
-                item
-                xs={12}>
-                <Typography
-                    className={classes.bigTitle}
-                >
-                    Listening is everything
-                </Typography>
-                <Typography variant="h6" align="center">Millions of songs and podcasts. No credit card needed.</Typography>
+                container
+                justifyContent="center">
                 <Grid
-                    container
-                    justifyContent="center">
+                    item
+                    xs={12}>
+                    <Typography
+                        className={classes.bigTitle}
+                    >
+                        Listening is everything
+                    </Typography>
+                    <Typography variant="h6" align="center">Millions of songs and podcasts. No credit card needed.</Typography>
                     <Grid
-                        item
-                        xs={12}>
-                        <CustomButton>
-                            GET SPOTIFY FREE
-                        </CustomButton>
+                        container
+                        justifyContent="center">
+                        <Grid
+                            item
+                            xs={12}>
+                            <CustomButton>
+                                GET SPOTIFY FREE
+                            </CustomButton>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
-        </Grid>
+            <Footer />
+        </React.Fragment>
     )
 }
 
