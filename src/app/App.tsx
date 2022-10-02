@@ -15,7 +15,6 @@ function App() {
     <main>
       <NavBar />
       <Outlet />
-      <Footer />
     </main>
   );
 }
