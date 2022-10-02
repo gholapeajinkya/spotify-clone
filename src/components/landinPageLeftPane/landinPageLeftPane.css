@@ -4,7 +4,6 @@
     width: 12rem;
     background-color: rgb(33, 33, 33);
     border-radius: 10px;
-    padding: 10px 10px;
     min-height: 100%;
 
 }
@@ -17,9 +16,14 @@
 }
 
 .landing-page-left-pane-nav {
-    padding: 8px 5px;
+    padding: 10px;
+    color: white;
 }
 
 .landing-page-left-pane-body {
     flex: 0 0 355px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border-bottom: 1px solid rgb(66, 65, 65);
 }
