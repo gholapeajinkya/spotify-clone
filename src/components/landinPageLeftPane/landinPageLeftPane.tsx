@@ -16,9 +16,13 @@ function LandinPageLeftPane() {
                 </NavLink>
             </div>
             <div className="landing-page-left-pane-body">
-                <NavLink className="landing-page-left-pane-nav" to={"/collection/playlists"}>
-                    My Playlist
-                </NavLink>
+                {
+                    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((playlist: number) => (
+                        <NavLink className="landing-page-left-pane-nav" to={`/collection/playlists/${playlist}`}>
+                            My Playlist {playlist}
+                        </NavLink>
+                    ))
+                }
             </div>
             <div className="landing-page-left-pane-footer">
                 <NavLink className="landing-page-left-pane-nav" to={"/collection/playlists"}>
