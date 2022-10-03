@@ -2,4 +2,9 @@
     width: 100%;
     background-color: rgb(33, 33, 33);
     border-radius: 10px;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0;
 }
