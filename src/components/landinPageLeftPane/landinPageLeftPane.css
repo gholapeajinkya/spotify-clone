@@ -24,6 +24,6 @@
     flex: 0 0 355px;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: auto;
     border-bottom: 1px solid rgb(66, 65, 65);
 }

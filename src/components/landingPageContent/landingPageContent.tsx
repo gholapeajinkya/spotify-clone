@@ -4,8 +4,13 @@ import "./landingPageContent.css"
 function LandingPageContent() {
     return (
         <div className='landing-page-content-root'>
-            <h3>Good morning</h3>
-            <WideCard />
+            <h3 className='landing-page-title'>Good morning</h3>
+            <div className='landing-page-content-card-container'>
+                <WideCard />
+                <WideCard />
+                <WideCard />
+                <WideCard />
+            </div>
         </div>
     )
 }
