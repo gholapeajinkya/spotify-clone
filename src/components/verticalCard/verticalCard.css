@@ -1,0 +1,25 @@
+.vertical-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(63, 61, 61);
+    border-radius: 5px;
+    width: 7rem;
+}
+
+.vertical-card-song-image {
+    width: inherit;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+
+.vertical-card-song-name {
+    margin: 0;
+    color: white;
+    margin-top: 3px;
+    font-weight: 700;
+}
+
+.vertical-card-song-artists {
+    margin: 0;
+}

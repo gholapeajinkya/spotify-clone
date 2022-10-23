@@ -5,6 +5,10 @@
     padding: 10px;
 }
 
+.landing-page-vertical-content {
+    margin-top: 15px;
+}
+
 .landing-page-title {
     color: white;
     margin-bottom: 10px;
@@ -18,4 +22,9 @@ h3 {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
+}
+
+.landing-page-content-vertical-card-container {
+    display: flex;
+    gap: 20px;
 }
