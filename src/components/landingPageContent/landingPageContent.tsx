@@ -1,4 +1,5 @@
 import React from 'react'
+import VerticalCard from '../verticalCard/verticalCard'
 import WideCard from '../wideCard/wideCard'
 import "./landingPageContent.css"
 function LandingPageContent() {
@@ -10,6 +11,16 @@ function LandingPageContent() {
                 <WideCard />
                 <WideCard />
                 <WideCard />
+            </div>
+            <div className='landing-page-vertical-content'>
+                <h3 className='landing-page-title'>Your top mixes</h3>
+                <div className='landing-page-content-vertical-card-container'>
+                    <VerticalCard />
+                    <VerticalCard />
+                    <VerticalCard />
+                    <VerticalCard />
+                    <VerticalCard />
+                </div>
             </div>
         </div>
     )
