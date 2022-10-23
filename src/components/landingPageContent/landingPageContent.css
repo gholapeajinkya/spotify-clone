@@ -5,6 +5,17 @@
     padding: 10px;
 }
 
+.landing-page-title {
+    color: white;
+    margin-bottom: 10px;
+}
+
 h3 {
     margin: 0;
+}
+
+.landing-page-content-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
 }
