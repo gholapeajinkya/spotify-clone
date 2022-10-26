@@ -5,6 +5,7 @@
     background-color: rgb(63, 61, 61);
     border-radius: 5px;
     width: 7rem;
+    cursor: pointer;
 }
 
 .vertical-card-song-image {
