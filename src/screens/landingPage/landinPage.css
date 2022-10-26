@@ -1,5 +1,12 @@
 .landin-page-root {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.landin-page-root-header {
+    display: flex;
     flex-direction: row;
     gap: 10px;
     padding: 10px;

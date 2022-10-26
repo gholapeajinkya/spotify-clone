@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { Navigate, Outlet, useNavigate } from 'react-router-dom';
-import Footer from '../components/footer/footer';
+import { Outlet, useNavigate } from 'react-router-dom';
 import NavBar from '../components/navBar/navBar';
 import './App.css';
 

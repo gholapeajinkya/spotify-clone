@@ -1,0 +1,11 @@
+.music-player-root {
+    width: inherit;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-player-slider {
+    width: 25rem;
+}
