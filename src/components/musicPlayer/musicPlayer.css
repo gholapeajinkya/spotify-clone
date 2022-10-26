@@ -2,8 +2,10 @@
     width: inherit;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 .music-player-slider {
